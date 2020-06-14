@@ -2,6 +2,9 @@
 ｂ	<br>	名詞
 ｂｒ	<br>	名詞
 ｐ	<p></p>	名詞
+ｓｐａｎ	<span></span>	名詞
+ｓぱｎ	<span></span>	名詞
+ｓ	<span></span>	名詞
 あ	<a href=""></a>	名詞
 あ	<a href="" target="_blank"></a>	名詞
 ぢｖ	<div></div>	名詞
@@ -69,7 +72,7 @@
 ｃ	clear: both;	名詞
 ｃ	color:;	名詞
 ｃ	color: rgba();	名詞
-ｃ	content: '';	名詞
+ｃ	content: ''; position: absolute; top: 1px; right: 1px; width: 1px; height: 1px; background: rgb(0, 0, 0, 1);	名詞
 ｃ	cursor: pointer;	名詞
 ｄ	display: flex;	名詞
 ｄ	display: block;	名詞
@@ -79,7 +82,8 @@
 え	empty-cells: show;	名詞
 ｆ	filter:;	名詞
 ｆ	float: left;	名詞
-ｆ	font-family: ;	名詞
+ｆ	footer	名詞
+ｆ	font-family: 游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro",HGS明朝E,メイリオ,Meiryo,serif;	名詞
 ｆ	font-style:normal;	名詞
 ｆ	font-weight: bold;	名詞
 ｈ	height: ;	名詞
@@ -101,6 +105,7 @@
 ｓ	scroll	名詞
 ｖ	visible	名詞
 ｈ	hidden	名詞
+ｈ	header	名詞
 あ	auto	名詞
 ｐ	padding:;	名詞
 ｐｔ	padding-top: px;	名詞
@@ -111,16 +116,21 @@
 ｐ	position: absolute;	名詞
 ｐ	position:fixed;	名詞
 ｒ	right: ;	名詞
+ｒ	right	名詞
+ｒ	rotate( )	名詞
 ｔ	table-layout: fixed;	名詞
 ｔ	text-align: right;	名詞
 ｔ	text-decoration: underline;	名詞
 ｔ	text-indent: 1em;	名詞
-ｔ	top:;	名詞
+ｔ	top: ;	名詞
+ｔ	top	名詞
 ｖ	vertical-align: middle;	名詞
 ヴァ	vertical-align: middle;	名詞
 み	middle	名詞
 せ	center	名詞
 ぼ	bottom	名詞
+ぼｔ	bottom	名詞
+とｐ	top	名詞
 ｖ	visibility: hidden;	名詞
 ひ	hidden	名詞
 ヴィ	visibility: hidden;	名詞
@@ -141,3 +151,16 @@
 ｃおｐ	&copy;	名詞
 ＜	&lt;	名詞
 ＞	&gt;	名詞
+ｇｒ	linear-gradient(to bottom, #fff 0%, #fff 50%, #fff 100%);	名詞
+ぼ	box-sizing: border-box;	名詞
+ぼｘ	box-sizing: border-box;	名詞
+ぼ box-shadow: 0 2px 0 0 rgb(0, 0, 0, 1) inset;	名詞
+ぼｘ box-shadow: 0 2px 0 0 rgb(0, 0, 0, 1) inset;	名詞
+ぼ border-radius: 50% 50%;	名詞
+ぼｒ border-radius: 50% 50%;	名詞
+ｔら	transition: all 0s ease;	名詞
+ｔら	transform: skewX(50deg) rotate(-5deg);	名詞
+ｓｋ	skewX( )	名詞
+ろ	rotate( )	名詞
+ｍ	@media screen and (max-width: 406px) {}	
+べ	bento	名詞
