@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* form style reset */
+input, button, textarea, select, label {
+  background: inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  color: inherit;
+}
+input::-ms-expand, ubmit::-ms-expand, textarea::-ms-expand, select::-ms-expand, label::-ms-expand{
+  display: none;
+}
+input[type="submit"], input[type="button"], select, label{
+  display: block;
+  cursor: pointer;
+}
+input:focus, textarea:focus, select:focus, label:focus{
+  outline: none;
+}
+input:invalid, textarea:invalid, select:invalid{
+  outline: none;
+}
+
+
+/* radio_box --------------*/
+.radio_box input{
+  display: none;
+  vertical-align: top;
+}
+.radio_box .label{
+  cursor: pointer;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 1rem;
+  height: 1rem;
+  background: #fff;
+  border: solid 2px #999;
+  box-sizing: border-box;
+}
+.radio_box input:checked + .label{
+  border: solid 2px #666;
+}
+.radio_box input:checked + .label::before{
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  right: .2rem;
+  content: '';
+  width: .55rem;
+  height: .25rem;
+  background: #c92929;
+  margin-top: -.3rem;
+  transform: rotate(45deg);
+  transform-origin: left bottom;
+}
+.radio_box input:checked + .label::after{
+  pointer-events: none;
+  position: absolute;
+  top: .1rem;
+  right: -.39rem;
+  content: '';
+  width: .9rem;
+  height: .25rem;
+  background: #c92929;
+  margin-top: -.3rem;
+  transform: rotate(-46deg);
+  transform-origin: right bottom;
+}
+
+/* check_box --------------*/
+.check_box{
+  text-align: center;
+}
+.check_box input{
+  display: none;
+  vertical-align: top;
+}
+.check_box .label{
+  cursor: pointer;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  padding: .5rem .25rem .5rem 1.5rem;
+  font-size: .875rem;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.check_box .label::before{
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: .25rem;
+  content: '';
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  transform: translate(0,-50%);
+  background: #fff;
+  border: solid 2px #999;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.check_box input:checked + .label{
+  background:rgba(255, 25, 0, .1);
+  font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
+  font-weight: bold;
+}
+.check_box input:checked + .label::before{
+  border: solid 2px #666;
+  background: #c92929;
+  box-shadow: 0 0 0 2px #fff inset;
+}
+
+/* button_box --------------*/
+.button_box{
+  margin: 0 auto;
+}
+.button_red{
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 350px;
+  min-height: 3.5rem;
+}
+.button_red input{
+  display: none;
+}
+.button_red .label{
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  display: table-cell;
+  padding: .5rem;
+  width: 100%;
+  height: 100%;
+  background: #c92929;
+  box-shadow: 0 -2px 0 0 rgba(0,0,0,.25) inset;
+  border-radius: 2.1875rem;
+  vertical-align: middle;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  color: #fff;
+  font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+.button_red input:disabled + .label,
+.button_red .disabled.label{
+  cursor: default;
+  background: #d9d9d9;
+  box-shadow: 0 -2px 0 0 rgba(0,0,0,0) inset;
+}
+.button_gray{
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  width: 60%;
+  max-width: 300px;
+  min-height: 3rem;
+}
+.button_gray input{
+  display: none;
+}
+.button_gray .label{
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  display: table-cell;
+  padding: .5rem;
+  width: 100%;
+  height: 100%;
+  background: #999;
+  box-shadow: 0 -2px 0 0 rgba(0,0,0,.25) inset;
+  border-radius: 2.0625rem;
+  vertical-align: middle;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.button_red_mini{
+  width: 5rem;
+}
+.button_red_mini input{
+  display: none;
+}
+.button_red_mini .label{
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  display: block;
+  padding: .4rem .25rem;
+  width: 80%;
+  max-width: 350px;
+  background: #c92929;
+  box-shadow: 0 -2px 0 0 rgba(0,0,0,.25) inset;
+  border-radius: .4rem;
+  vertical-align: middle;
+  font-size: .75rem;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.button_gray_mini{
+  margin-left: 5px;
+  display: inline-block;
+}
+.button_gray_mini input{
+  display: none;
+}
+.button_gray_mini .label{
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  display: block;
+  padding: .3rem .5rem;
+  min-width: 3rem;
+  background: #999;
+  box-shadow: 0 -2px 0 0 rgba(0,0,0,.25) inset;
+  border-radius: .25rem;
+  vertical-align: middle;
+  font-size: .6875rem;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.button_black_mini{
+  margin-left: 5px;
+  display: inline-block;
+}
+.button_black_mini input{
+  display: none;
+}
+.button_black_mini .label{
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  display: block;
+  padding: .3rem .5rem;
+  min-width: 3rem;
+  background: #333;
+  box-shadow: 0 -2px 0 0 rgba(0,0,0,.25) inset;
+  border-radius: .25rem;
+  vertical-align: middle;
+  font-size: .6875rem;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.button_red .label:hover,
+.button_gray .label:hover,
+.button_red_mini .label:hover,
+.button_gray_mini .label:hover,
+.button_black_mini .label:hover{
+  opacity: .75;
+}
