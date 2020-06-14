@@ -1,0 +1,34 @@
+// https://colordrop.io/color/17942
+
+.point-color-font01{
+  color: #96ceb4;
+  color: rgba(150,206,180,1);
+}
+.point-color-background01{
+  background: #96ceb4;
+  background: rgba(150,206,180,1);
+}
+.point-color-font02{
+  color: #ffeead;
+  color: rgba(255,238,173,1);
+}
+.point-color-background02{
+  background: #ffeead;
+  background: rgba(255,238,173,1);
+}
+.point-color-font03{
+  color: #d9534f;
+  color: rgba(217,83,79,1);
+}
+.point-color-background03{
+  background: #d9534f;
+  background: rgba(217,83,79,1);
+}
+.point-color-font04{
+  color: #ffad60;
+  color: rgba(255,173,96,1);
+}
+.point-color-background04{
+  background: #ffad60;
+  background: rgba(255,173,96,1);
+}
