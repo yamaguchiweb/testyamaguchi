@@ -1,0 +1,158 @@
+
+/***
+========= bento-lists =========
+***/
+.bento-lists {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+}
+.bento-lists li{
+  margin-bottom: 30px;
+  width: 30%;
+  min-width: 150px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,.3);
+  line-height: 1.4;
+}
+.bento-lists li img{
+  margin-bottom: 15px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+}
+.bento-lists .price{
+color: #333;
+padding: 5px;
+}
+.bento-lists .price span{
+color: #ff1a44;
+}
+
+/***
+========= bento-details =========
+***/
+.bento-details{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bento-details-images img{
+  max-width: 100%;
+}
+.bento-details-text{
+  line-height: 1.2;
+}
+.bento-details-text .limit{
+color: #333;
+padding: 5px;
+}
+.bento-details-text .price{
+color: #333;
+padding: 5px 0;
+}
+.bento-details-text .price span{
+color: #ff1a44;
+}
+.bento-details-text table{
+  padding: 5px 0;
+}
+.bento-details-text table select{
+border: solid 1px #666;
+}
+.bento-details-text .redeembox{
+}
+.bento-details-text dl{
+  padding: 5px 0;
+}
+.bento-details-text dt{
+  padding: 5px 0;
+}
+.bento-details-text dd{
+  position: relative;
+  padding: 5px 0 5px 1em;
+}
+.bento-details-text dd::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '・';
+}
+
+/***
+========= bento-order =========
+***/
+.bento-order{
+  margin: 0 auto;
+}
+.bento-order-images img{
+  max-width: 100%;
+}
+.bento-order-box{
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  /* border-collapse: collapse; */
+  border: solid 2px #999;
+}
+.bento-order-box .tr{
+  padding: 5px;
+  width: 25%;
+  background: #999;
+  border: solid 2px #999;
+}
+.bento-order-box .td{
+  padding: 5px;
+  background: #fff;
+  border: solid 2px #999;
+}
+.bento-order-box .button-box{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bento-order-box .button-prev{
+  display: inline-block;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+}
+.bento-order-box .button-next{
+  display: inline-block;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+}
+.bento-order-error{
+  margin: 0 auto;
+  padding: 15px;
+  background: #ffccd5;
+  color: #ff1a44;
+  line-height: 1.4;
+}
+
+/***
+========= bento-notice =========
+***/
+.bento-notice{
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  border-collapse: collapse;
+  border: solid 1px #999;
+}
+.bento-notice td{
+  padding: 5px;
+  border: solid 2px #999;
+}
