@@ -1,89 +1,108 @@
 <html>
+
 <head>
 </head>
-<body>
-<style>
-.terms_20200901_wrap{
-  margin: 0 auto;
-  width: 90%;
-}
-.terms_20200901{
-  margin: 0 auto 5%;
-}
-.terms_20200901 + .terms_20200901{
-  margin-top: 5%;
-}
-.terms_20200901 *{
-  margin: 0;
-  padding: 0;
-}
-.terms_20200901 h2{
-  margin: 0 auto 5%;
-  line-height: 1.4;
-  font-size: 20px;
-  font-weight: bold;
-}
-.terms_20200901 p{
-  margin: 0 auto 5%;
-}
-.terms_20200901 > .list_style_01{
-  margin: 0 auto;
-  list-style: decimal;
-}
-.terms_20200901 .list_style_01 > li{
-  list-style-type:none;
-  list-style-position:inside;
-  counter-increment: cnt1;
-  padding-left: 2.5em;
-  text-indent: -1.15em;
-}
-.terms_20200901 .list_style_01 > li:before{
-  display: inline-block;
-  content: counter(cnt1) ". 　";
-}
-.terms_20200901 > .list_style_02{
-  margin: 0 auto;
-  list-style: decimal;
-}
-.terms_20200901 .list_style_02 > li{
-  list-style-type:none;
-  list-style-position:inside;
-  counter-increment: cnt2;
-  padding-left: 2.5em;
-  text-indent: -1.2em;
-}
-.terms_20200901 .list_style_02 > li:before{
-  display: inline-block;
-  content: "(" counter(cnt2) ")　";
-}
 
-</style>
-<div class="terms_20200901_wrap">
-<div class="terms_20200901" id="terms01">
-  <h2>見出し</h2>
-  <p>パラグラフパラグラフパラグラフパラグラフパラグラフ</p>
-  <ol class="list_style_01">
-    <li>リストリストリストリストリストリストリストリストリストリストリストリスト</li>
-    <li>リスト</li>
-    <li>リスト
-      <ol class="list_style_02">
-        <li>リストリストリストリストリストリストリストリストリストリストリスト</li>
+<body>
+  <style>
+    .terms_20200901_wrap {
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    .terms_20200901 {
+      margin: 0 auto 5%;
+    }
+
+    .terms_20200901+.terms_20200901 {
+      margin-top: 5%;
+    }
+
+    .terms_20200901 * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .terms_20200901 h2 {
+      margin: 0 auto 5%;
+      line-height: 1.4;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .terms_20200901 p {
+      margin: 0 auto 5%;
+    }
+
+    .terms_20200901>.list_style_01 {
+      margin: 0 auto;
+      list-style: decimal;
+    }
+
+    .terms_20200901 .list_style_01>li {
+      position: relative;
+      list-style-type: none;
+      list-style-position: inside;
+      counter-increment: cnt1;
+      padding-left: 2.5em;
+    }
+
+    .terms_20200901 .list_style_01>li:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      content: counter(cnt1) ". 　";
+    }
+
+    .terms_20200901>.list_style_02 {
+      margin: 0 auto;
+      list-style: decimal;
+    }
+
+    .terms_20200901 .list_style_02>li {
+      position: relative;
+      list-style-type: none;
+      list-style-position: inside;
+      counter-increment: cnt2;
+      padding-left: 2.5em;
+    }
+
+    .terms_20200901 .list_style_02>li:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      content: "("counter(cnt2) ")　";
+    }
+  </style>
+  <div class="terms_20200901_wrap">
+    <div class="terms_20200901" id="terms01">
+      <h2>見出し</h2>
+      <p>パラグラフパラグラフパラグラフパラグラフパラグラフ</p>
+      <ol class="list_style_01">
+        <li>リストリストリストリストリストリストリストリストリストリストリストリスト</li>
+        <li>リスト</li>
+        <li>リスト
+          <ol class="list_style_02">
+            <li>リストリストリストリストリストリストリストリストリストリストリスト</li>
+            <li>リスト</li>
+          </ol>
+        </li>
         <li>リスト</li>
       </ol>
-    </li>
-    <li>リスト</li>
-  </ol>
-  <ol class="list_style_02">
-    <li>リスト</li>
-    <li>リスト</li>
-  </ol>
-</div><!-- /terms_20200901 -->
+      <ol class="list_style_02">
+        <li>リスト</li>
+        <li>リスト</li>
+      </ol>
+    </div><!-- /terms_20200901 -->
 
-<div class="terms_20200901" id="terms01">
-  <h2>見出し</h2>
-  <p>パラグラフパラグラフパラグラフパラグラフパラグラフ</p>
-</div><!-- /terms_20200901 -->
+    <div class="terms_20200901" id="terms01">
+      <h2>見出し</h2>
+      <p>パラグラフパラグラフパラグラフパラグラフパラグラフ</p>
+    </div><!-- /terms_20200901 -->
 
-</div><!-- /terms_20200901_wrap -->
+  </div><!-- /terms_20200901_wrap -->
 </body>
+
 </html>
