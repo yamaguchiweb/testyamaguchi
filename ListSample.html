@@ -34,64 +34,56 @@
       margin: 0 auto 5%;
     }
 
-    .terms_20200901>.list_style_01 {
+    .terms_20200901 > .terms_num_list {
       margin: 0 auto;
       list-style: decimal;
     }
-
-    .terms_20200901 .list_style_01>li {
+    .terms_20200901 .terms_num_list li {
       position: relative;
       list-style-type: none;
       list-style-position: inside;
-      counter-increment: cnt1;
       padding-left: 2.5em;
     }
 
-    .terms_20200901 .list_style_01>li:before {
+    .terms_20200901 .terms_num_list.terms_simple_num > li {
+      counter-increment: cnt1;
+    }
+    .terms_20200901 .terms_num_list.terms_simple_num > li:before {
       position: absolute;
       top: 0;
-      left: 0;
+      left: .25em;
       display: inline-block;
       content: counter(cnt1) ". 　";
     }
 
-    .terms_20200901>.list_style_02 {
-      margin: 0 auto;
-      list-style: decimal;
-    }
-
-    .terms_20200901 .list_style_02>li {
-      position: relative;
-      list-style-type: none;
-      list-style-position: inside;
+    .terms_20200901 .terms_num_list.terms_brackets_num > li {
       counter-increment: cnt2;
-      padding-left: 2.5em;
     }
-
-    .terms_20200901 .list_style_02>li:before {
+    .terms_20200901 .terms_num_list.terms_brackets_num > li:before {
       position: absolute;
       top: 0;
       left: 0;
       display: inline-block;
       content: "("counter(cnt2) ")　";
     }
+
   </style>
   <div class="terms_20200901_wrap">
     <div class="terms_20200901" id="terms01">
       <h2>見出し</h2>
       <p>パラグラフパラグラフパラグラフパラグラフパラグラフ</p>
-      <ol class="list_style_01">
+      <ol class="terms_num_list terms_simple_num">
         <li>リストリストリストリストリストリストリストリストリストリストリストリスト</li>
         <li>リスト</li>
         <li>リスト
-          <ol class="list_style_02">
+          <ol class="terms_num_list terms_brackets_num">
             <li>リストリストリストリストリストリストリストリストリストリストリスト</li>
             <li>リスト</li>
           </ol>
         </li>
         <li>リスト</li>
       </ol>
-      <ol class="list_style_02">
+      <ol class="terms_num_list terms_brackets_num">
         <li>リスト</li>
         <li>リスト</li>
       </ol>
